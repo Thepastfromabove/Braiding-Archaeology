@@ -1,0 +1,42 @@
+Plot()
+ {
+  Curve("ShCal20", "ShCal20.14c");
+  Sequence()
+  {
+   Boundary("Start");
+   Phase("Layer 5")
+   {
+    R_Date("Wk56162 - Layer 5", 528, 18)
+    {
+     color = "Grey";
+    };
+   };
+   Boundary("Boundary_Layer5");
+   Interval("Layer 4");
+   Boundary("Boundary_Layer4");
+   Phase("Layer 3")
+   {
+    R_Date("Wk55297", 180, 20)
+    {
+     color = "Red";
+    };
+    R_Date("Wk55296", 156, 19)
+    {
+     color = "Orange";
+    };
+    R_Date("Wk55299", 151, 21)
+    {
+     color = "Orange";
+    };
+   };
+   Boundary("Boundary_Layer3");
+   Phase("Layer Fire Scoop")
+   {
+    R_Date("Wk55298 Base of scoop", 190, 19)
+    {
+     color = "Green";
+    };
+   };
+   Boundary("End");
+  };
+ };
